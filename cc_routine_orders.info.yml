@@ -3,6 +3,7 @@ description: 'Provides a place to upload routine orders, notifications will be s
 type: module
 core: 8.x
 dependencies:
+  - cc_site_controller
   - datetime
   - entity_browser_block_layout
   - field
