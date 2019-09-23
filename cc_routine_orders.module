@@ -44,13 +44,13 @@ function cc_routine_orders_entity_presave(Drupal\Core\Entity\EntityInterface $en
   if ($entity->bundle() == 'cc_routine_orders') {
 
     // The start date for the ROs, changing format.
-    $start_date = date('M j, Y', strtotime($entity->get('field_ws_ro_start_date')->value));
+    $start_date = date('M j, Y', strtotime($entity->get('field_cc_ro_start_date')->value));
 
     // The end date for the ROs, changing format.
-    $end_date = date('M j, Y', strtotime($entity->get('field_ws_ro_end_date')->value));
+    $end_date = date('M j, Y', strtotime($entity->get('field_cc_ro_end_date')->value));
 
     // Set the title based on the start and end dates.
-    $entity->setTitle('Routine orders for ' $start_date . ' to ' . $end_date);
+    $entity->setTitle('Routine orders for ' . $start_date . ' to ' . $end_date);
   }
 }
 
