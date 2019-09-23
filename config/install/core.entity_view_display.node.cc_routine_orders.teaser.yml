@@ -3,6 +3,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.cc_routine_orders.field_cc_ro_end_date
+    - field.field.node.cc_routine_orders.field_cc_ro_file
+    - field.field.node.cc_routine_orders.field_cc_ro_start_date
     - node.type.cc_routine_orders
   module:
     - user
@@ -16,4 +19,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_cc_ro_end_date: true
+  field_cc_ro_file: true
+  field_cc_ro_start_date: true
