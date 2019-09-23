@@ -1,0 +1,13 @@
+name: 'Routine orders'
+description: 'Provides a place to upload routine orders, notifications will be sent when content is published.'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - entity_browser_block_layout
+  - field
+  - file
+  - menu_ui
+  - node
+  - path
+  - user

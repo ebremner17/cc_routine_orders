@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cc_ro_file
+    - node.type.cc_routine_orders
+  module:
+    - file
+id: node.cc_routine_orders.field_cc_ro_file
+field_name: field_cc_ro_file
+entity_type: node
+bundle: cc_routine_orders
+label: File
+description: 'Select the file for the routine orders.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: 5MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cc_routine_orders.field_cc_ro_end_date
+    - field.field.node.cc_routine_orders.field_cc_ro_file
+    - field.field.node.cc_routine_orders.field_cc_ro_start_date
+    - node.type.cc_routine_orders
+  module:
+    - datetime
+    - file
+    - user
+id: node.cc_routine_orders.default
+targetEntityType: node
+bundle: cc_routine_orders
+mode: default
+content:
+  field_cc_ro_end_date:
+    weight: 102
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: cc_short_month_date_only
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_cc_ro_file:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_cc_ro_start_date:
+    weight: 101
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: cc_short_month_date_only
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

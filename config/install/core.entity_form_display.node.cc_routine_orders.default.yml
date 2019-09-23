@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cc_routine_orders.field_cc_ro_end_date
+    - field.field.node.cc_routine_orders.field_cc_ro_file
+    - field.field.node.cc_routine_orders.field_cc_ro_start_date
+    - node.type.cc_routine_orders
+  module:
+    - datetime
+    - file
+    - path
+id: node.cc_routine_orders.default
+targetEntityType: node
+bundle: cc_routine_orders
+mode: default
+content:
+  field_cc_ro_end_date:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_cc_ro_file:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_cc_ro_start_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

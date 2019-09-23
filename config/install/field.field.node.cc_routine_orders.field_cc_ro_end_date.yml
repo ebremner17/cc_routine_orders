@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cc_ro_end_date
+    - node.type.cc_routine_orders
+  module:
+    - datetime
+id: node.cc_routine_orders.field_cc_ro_end_date
+field_name: field_cc_ro_end_date
+entity_type: node
+bundle: cc_routine_orders
+label: 'End date'
+description: 'Enter the end date for the routine orders.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
