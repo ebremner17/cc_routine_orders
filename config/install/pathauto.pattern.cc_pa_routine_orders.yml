@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: cc_pa_routine_orders
+label: 'Routine orders'
+type: 'canonical_entities:node'
+pattern: 'ros/[node:title]'
+selection_criteria:
+  aeb26ed8-e2b2-402f-825b-56f371e4209a:
+    id: node_type
+    bundles:
+      cc_routine_orders: cc_routine_orders
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aeb26ed8-e2b2-402f-825b-56f371e4209a
+selection_logic: and
+weight: -5
+relationships: {  }
